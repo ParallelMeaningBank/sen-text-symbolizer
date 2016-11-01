@@ -1,0 +1,4 @@
+Current model: 
+size: 30k - 0-999
+num-iters = 250k
+acc = 97.3556%
