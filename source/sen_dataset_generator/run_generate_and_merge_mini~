@@ -1,0 +1,45 @@
+echo "Created temp directory"
+mkdir tmp
+
+echo "Start genetating TRAIN set"
+
+python dataset_generate.py 11 5000 0.1 0.1 1 numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.train.csv 0 999999 exponential
+
+mkdir out_train
+mv tmp/* out_train/
+cat out_train/*.csv > ../../dataset/017/numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.train.csv
+cat out_train/*.sym > ../../dataset/017/numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.train.sym
+cat out_train/*.word > ../../dataset/017/numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.train.word
+
+###########################################################################################
+
+echo "Start genetating DEV set"
+python dataset_generate.py 11 5000 0.1 0.1 1 numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.dev.csv 0 999999 exponential
+
+mkdir out_dev
+mv tmp/* out_dev/
+cat out_dev/*.csv > ../../dataset/017/numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.dev.csv
+cat out_dev/*.sym > ../../dataset/017/numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.dev.sym
+cat out_dev/*.word > ../../dataset/017/numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.dev.word
+
+###########################################################################################
+
+echo "Start genetating TEST set"
+python dataset_generate.py 11 5000 0.1 0.1 1 numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.test.csv 0 999999 exponential
+
+mkdir out_test
+mv tmp/* out_test/
+cat out_test/*.csv > ../../dataset/017/numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.test.csv
+cat out_test/*.sym > ../../dataset/017/numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.test.sym
+cat out_test/*.word > ../../dataset/017/numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws.test.word
+
+
+###########################################################################################
+
+echo "Remove temp files."
+rm -rf out_train
+rm -rf out_dev
+rm -rf out_test
+rm -rf tmp
+
+

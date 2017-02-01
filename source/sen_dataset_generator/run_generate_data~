@@ -1,0 +1,31 @@
+echo "Start genetating TRAIN set"
+
+python dataset_generate.py 11 2000000 0.1 0.1 1 2m_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-train-gb.csv 0 999999 exponential
+
+mkdir out_train
+mv tmp/* out_train/
+cat out_train/*.csv > ../dataset/016/2m_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-train-gb.csv
+cat out_train/*.sym > ../dataset/016/2m_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-train-gb.sym
+cat out_train/*.word > ../dataset/016/2m_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-train-gb.word
+
+###########################################################################################
+
+echo "Start genetating DEV set"
+python dataset_generate.py 11 500000 0.1 0.1 1 500k_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-dev-gb.csv 0 999999 exponential
+
+mkdir out_dev
+mv tmp/* out_dev/
+cat out_dev/*.csv > ../dataset/016/500k_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-dev-gb.csv
+cat out_dev/*.sym > ../dataset/016/500k_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-dev-gb.sym
+cat out_dev/*.word > ../dataset/016/500k_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-dev-gb.word
+
+###########################################################################################
+
+echo "Start genetating TEST set"
+python dataset_generate.py 11 50000 0.1 0.1 1 50k_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-test-gb.csv 0 999999 exponential
+
+mkdir out_test
+mv tmp/* out_test/
+cat out_test/*.csv > ../dataset/016/50k_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-test-gb.csv
+cat out_test/*.sym > ../dataset/016/50k_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-test-gb.sym
+cat out_test/*.word > ../dataset/016/50k_numtimegpoevetamdacdlcu-text_0.1_0.1_all-ws-test-gb.word
