@@ -1,0 +1,25 @@
+:- op(601, xfx, (/)).
+:- op(601, xfx, (\)).
+:- multifile ccg/2, id/2.
+:- discontiguous ccg/2, id/2.
+
+ccg(1,
+ ba(np,
+  lp(np,
+   lp(lrb,
+    t(lrb, '?', [from:0, to:1, pos:'JJ', lemma:'\'\'\"', sem:'DIS']),
+    t(lrb, '?', [from:1, to:2, pos:'NN', lemma:'\'\'\'', sem:'EPS'])),
+   lx(np, n,
+    t(n, 'What', [from:2, to:6, pos:'WP', lemma:'what', sem:'QUE']))),
+  rp(np\np,
+   conj(np\np,
+    t(,, ',', [from:6, to:7, pos:',', lemma:',', sem:'NIL']),
+    fa(np,
+     t(np/n, 'the', [from:8, to:11, pos:'DT', lemma:'the', sem:'DEF']),
+     fa(n,
+      t(n/n, 'red-headed', [from:12, to:22, pos:'JJ', lemma:'red-headed', sem:'IST']),
+      t(n, 'man', [from:23, to:26, pos:'NN', lemma:'man', sem:'CON'])))),
+   rp(.,
+    t(., '?', [from:26, to:27, pos:'.', lemma:'?', sem:'QUE']),
+    t(rrb, '?', [from:27, to:28, pos:'NNS', lemma:'\'\'\'', sem:'NIL']))))).
+

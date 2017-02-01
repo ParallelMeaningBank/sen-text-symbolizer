@@ -1,0 +1,7 @@
+Model are not included due to Github file size limit policy.
+Please download the from https://www.dropbox.com/sh/axwf43ndqf0yuv4/AAAfxYvpIIOpGd6VWKPv9SPIa?dl=0
+Files:
+- translate.ckpt-42400.7z
+- translate.ckpt-42400.meta.7z
+
+Please extract the 7z to deploy the model.

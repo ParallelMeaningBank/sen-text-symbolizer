@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tokenization SYSTEM "src/data/boxer/tokenization.dtd">
+<tokenization>
+ <der id="1">
+  <lexlist>
+   <lex id="1001">
+    <token>“</token>
+    <tag type="from">0</tag>
+    <tag type="to">1</tag>
+    <tag type="sem">DIS</tag>
+    <tag type="lemma">''"</tag>
+   </lex>
+   <lex id="1002">
+    <token>‘</token>
+    <tag type="from">1</tag>
+    <tag type="to">2</tag>
+    <tag type="sem">EPS</tag>
+    <tag type="lemma">'''</tag>
+   </lex>
+   <lex id="1003">
+    <token>What</token>
+    <tag type="from">2</tag>
+    <tag type="to">6</tag>
+    <tag type="sem">QUE</tag>
+    <tag type="lemma">what</tag>
+   </lex>
+   <lex id="1004">
+    <token>,</token>
+    <tag type="from">6</tag>
+    <tag type="to">7</tag>
+    <tag type="sem">NIL</tag>
+    <tag type="lemma">,</tag>
+   </lex>
+   <lex id="1005">
+    <token>the</token>
+    <tag type="from">8</tag>
+    <tag type="to">11</tag>
+    <tag type="sem">DEF</tag>
+    <tag type="lemma">the</tag>
+   </lex>
+   <lex id="1006">
+    <token>red-headed</token>
+    <tag type="from">12</tag>
+    <tag type="to">22</tag>
+    <tag type="sem">IST</tag>
+    <tag type="lemma">red-headed</tag>
+   </lex>
+   <lex id="1007">
+    <token>man</token>
+    <tag type="from">23</tag>
+    <tag type="to">26</tag>
+    <tag type="sem">CON</tag>
+    <tag type="lemma">man</tag>
+   </lex>
+   <lex id="1008">
+    <token>?</token>
+    <tag type="from">26</tag>
+    <tag type="to">27</tag>
+    <tag type="sem">QUE</tag>
+    <tag type="lemma">?</tag>
+   </lex>
+   <lex id="1009">
+    <token>’</token>
+    <tag type="from">27</tag>
+    <tag type="to">28</tag>
+    <tag type="sem">NIL</tag>
+    <tag type="lemma">'''</tag>
+   </lex>
+  </lexlist>
+ </der>
+</tokenization>

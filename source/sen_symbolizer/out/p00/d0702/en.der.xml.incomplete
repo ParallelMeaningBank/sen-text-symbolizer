@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/data/boxer/xdrs.dtd">
+<xdrs-output version="'boxer v1.00 (unix build on 23 December 2016, 10:24:45)'">
+ <der id="1">
+  <binaryrule type="ba" description="Backward Application">
+   <cat>
+     <atomic>NP</atomic>
+   </cat>
+   <sem>
+   <lam>
+    <var>v1</var>
+    <merge>
+     <drs type="normal" label="b1">
+      <domain>
+       <dr label="b1" name="x1">
+       <indexlist>
+       <index pos="5">i1005</index>
+       </indexlist>
+       </dr>
+       <dr label="b1" name="x2">
+       <indexlist>
+       <index pos="3">i1003</index>
+       </indexlist>
+       </dr>
+       <dr label="b2" name="x3">
+       <indexlist>
+       <index pos="6">i1006</index>
+       </indexlist>
+       </dr>
+       <dr label="b2" name="s1">
+       <indexlist>
+       </indexlist>
+       </dr>
+      </domain>
+      <conds>
+       <cond label="b1">
+        <pred arg="x2" symbol="thing" type="n" sense="0">
+        <indexlist>
+        <index pos="4">i1004</index>
+        </indexlist>
+        </pred>
+       </cond>
+       <cond label="b1">
+        <pred arg="x2" symbol="''&quot;" type="n" sense="0">
+        <indexlist>
+        <index pos="1">i1001</index>
+        </indexlist>
+        </pred>
+       </cond>
+       <cond label="b1">
+        <rel arg1="x2" arg2="x1" symbol="subset_of" sense="1">
+        <indexlist>
+        </indexlist>
+        </rel>
+       </cond>
+       <cond label="b2">
+        <rel arg1="x3" arg2="s1" symbol="Attribute" sense="1">
+        <indexlist>
+        </indexlist>
+        </rel>
+       </cond>
+       <cond label="b2">
+        <pred arg="s1" symbol="red-headed" type="a" sense="0">
+        <indexlist>
+        <index pos="7">i1007</index>
+        </indexlist>
+        </pred>
+       </cond>
+       <cond label="b2">
+        <pred arg="x3" symbol="man" type="n" sense="0">
+        <indexlist>
+        <index pos="8">i1008</index>
+        </indexlist>
+        </pred>
+       </cond>
+       <cond label="b1">
+        <rel arg1="x3" arg2="x1" symbol="subset_of" sense="1">
+        <indexlist>
+        </indexlist>
+        </rel>
+       </cond>
+      </conds>
+     </drs>
+     <app>
+      <var>v1</var>
+      <var>x1</var>
+     </app>
+    </merge>
+   </lam>
+   </sem>
+   <binaryrule type="fa" description="Forward Application">
+    <cat>
+      <atomic>NP</atomic>
+    </cat>
+    <sem>
+    <lam>
+     <var>v1</var>
+     <merge>
+      <drs type="normal" label="b1">
+       <domain>
+        <dr label="b1" name="x1">
+        <indexlist>
+        <index pos="3">i1003</index>
+        </indexlist>
+        </dr>
+       </domain>
+       <conds>
+        <cond label="b1">
+         <pred arg="x1" symbol="thing" type="n" sense="0">
+         <indexlist>
+         <index pos="4">i1004</index>
+         </indexlist>
+         </pred>
+        </cond>
+        <cond label="b1">
+         <pred arg="x1" symbol="''&quot;" type="n" sense="0">
+         <indexlist>
+         <index pos="1">i1001</index>
+         </indexlist>
+         </pred>
+        </cond>
+       </conds>
+      </drs>
+      <app>
+       <var>v1</var>
+       <var>x1</var>
+      </app>
+     </merge>
+    </lam>
+    </sem>
+    <binaryrule type="fa" description="Forward Application">
+     <cat>
+      <forward>
+        <atomic>NP</atomic>
+        <atomic>NP</atomic>
+      </forward>
+     </cat>
+     <sem>
+     <lam>
+      <var>v1</var>
+      <lam>
+       <var>v2</var>
+       <app>
+        <var>v1</var>
+        <lam>
+         <var>v3</var>
+         <merge>
+          <drs type="normal" label="b1">
+           <domain>
+           </domain>
+           <conds>
+            <cond label="b1">
+             <pred arg="v3" symbol="''&quot;" type="n" sense="0">
+             <indexlist>
+             <index pos="1">i1001</index>
+             </indexlist>
+             </pred>
+            </cond>
+           </conds>
+          </drs>
+          <app>
+           <var>v2</var>
+           <var>v3</var>
+          </app>
+         </merge>
+        </lam>
+       </app>
+      </lam>
+     </lam>
+     </sem>
+     <lex id="1001">
+      <token>?</token>
+      <tag type="sem">AND</tag>
+      <tag type="sym">''&quot;</tag>
+      <tag type="lemma">''&quot;</tag>
+      <tag type="from">0</tag>
+      <tag type="to">1</tag>
+      <tag type="pos">JJ</tag>
+      <cat>
+       <forward>
+        <forward>
+          <atomic>NP</atomic>
+          <atomic>NP</atomic>
+        </forward>
+        <forward>
+          <atomic>NP</atomic>
+          <atomic>NP</atomic>
+        </forward>
+       </forward>
+      </cat>
+      <sem>
+       <lam>
+        <var>v1</var>
+        <lam>
+         <var>v2</var>
+         <lam>
+          <var>v3</var>
+          <app>
+           <app>
+            <var>v1</var>
+            <var>v2</var>
+           </app>
+           <lam>
+            <var>v4</var>
+            <merge>
+             <drs type="normal" label="b1">
+              <domain>
+              </domain>
+              <conds>
+               <cond label="b1">
+                <pred arg="v4" symbol="''&quot;" type="n" sense="0">
+                <indexlist>
+                <index pos="1">i1001</index>
+                </indexlist>
+                </pred>
+               </cond>
+              </conds>
+             </drs>
+             <app>
+              <var>v3</var>
+              <var>v4</var>
+             </app>
+            </merge>
+           </lam>
+          </app>
+         </lam>
+        </lam>
+       </lam>
+      </sem>
+     </lex>
+     <lex id="1002">
+      <token>?</token>
+      <tag type="sem">EPS</tag>
+      <tag type="sym">'''</tag>
+      <tag type="lemma">'''</tag>
+      <tag type="from">1</tag>
+      <tag type="to">2</tag>
+      <tag type="pos">NN</tag>
+      <cat>
+       <forward>
+         <atomic>NP</atomic>
+         <atomic>NP</atomic>
+       </forward>
+      </cat>
+      <sem>
+       <lam>
+        <var>v1</var>
+        <var>v1</var>
+       </lam>
+      </sem>
+     </lex>
+     <tokens>
+      <token>?</token>
+      <token>?</token>
+     </tokens>
+    </binaryrule>
+    <binaryrule type="fa" description="Forward Application">
+     <cat>
+       <atomic>NP</atomic>
+     </cat>
+     <sem>
+     <lam>
+      <var>v1</var>
+      <merge>
+       <drs type="normal" label="b1">
+        <domain>
+         <dr label="b1" name="x1">
+         <indexlist>
+         <index pos="3">i1003</index>
+         </indexlist>
+         </dr>
+        </domain>
+        <conds>
+         <cond label="b1">
+          <pred arg="x1" symbol="thing" type="n" sense="0">
+          <indexlist>
+          <index pos="4">i1004</index>
+          </indexlist>
+          </pred>
+         </cond>
+        </conds>
+       </drs>
+       <app>
+        <var>v1</var>
+        <var>x1</var>
+       </app>
+      </merge>
+     </lam>
+     </sem>
+     <lex id="1003">
+      <token>ø</token>
+      <tag type="sem">DIS</tag>
+      <tag type="sym">ø</tag>
+      <tag type="lemma">ø</tag>
+      <tag type="sense">0</tag>
+      <tag type="from">2</tag>
+      <tag type="to">-1</tag>
+      <cat>
+       <forward>
+         <atomic>NP</atomic>
+         <atomic>N</atomic>
+       </forward>
+      </cat>
+      <sem>
+       <lam>
+        <var>v1</var>
+        <lam>
+         <var>v2</var>
+         <merge>
+          <drs type="normal" label="b1">
+           <domain>
+            <dr label="b1" name="x1">
+            <indexlist>
+            <index pos="3">i1003</index>
+            </indexlist>
+            </dr>
+           </domain>
+           <conds>
+           </conds>
+          </drs>
+          <merge>
+           <app>
+            <var>v1</var>
+            <var>x1</var>
+           </app>
+           <app>
+            <var>v2</var>
+            <var>x1</var>
+           </app>
+          </merge>
+         </merge>
+        </lam>
+       </lam>
+      </sem>
+     </lex>
+     <lex id="1004">
+      <token>What</token>
+      <tag type="sem">QUE</tag>
+      <tag type="sym">thing</tag>
+      <tag type="lemma">thing</tag>
+      <tag type="from">2</tag>
+      <tag type="to">6</tag>
+      <tag type="pos">WP</tag>
+      <cat>
+        <atomic>N</atomic>
+      </cat>
+      <sem>
+       <lam>
+        <var>v1</var>
+        <drs type="normal" label="b1">
+         <domain>
+         </domain>
+         <conds>
+          <cond label="b1">
+           <pred arg="v1" symbol="thing" type="n" sense="0">
+           <indexlist>
+           <index pos="4">i1004</index>
+           </indexlist>
+           </pred>
+          </cond>
+         </conds>
+        </drs>
+       </lam>
+      </sem>
+     </lex>
+     <tokens>
+      <token>What</token>
+     </tokens>
+    </binaryrule>
+    <tokens>
+     <token>?</token>
+     <token>?</token>
+     <token>What</token>
+    </tokens>
+   </binaryrule>
+   <binaryrule type="ba" description="Backward Application">
+    <cat>
+     <backward>
+       <atomic>NP</atomic>
+       <atomic>NP</atomic>
+     </backward>
+    </cat>
+    <sem>
+    <lam>
+     <var>v1</var>
+     <lam>
+      <var>v2</var>
+      <merge>
+       <drs type="normal" label="b1">
+        <domain>
+         <dr label="b1" name="x1">
+         <indexlist>
+         <index pos="5">i1005</index>
+         </indexlist>
+         </dr>
+        </domain>
+        <conds>
+        </conds>
+       </drs>
+       <merge>
+        <app>
+         <var>v1</var>
+         <lam>
+          <var>v3</var>
+          <drs type="normal" label="b2">
+           <domain>
+           </domain>
+           <conds>
+            <cond label="b2">
+             <rel arg1="v3" arg2="x1" symbol="subset_of" sense="1">
+             <indexlist>
+             </indexlist>
+             </rel>
+            </cond>
+           </conds>
+          </drs>
+         </lam>
+        </app>
+        <merge>
+         <drs type="normal" label="b4">
+          <domain>
+           <dr label="b3" name="x2">
+           <indexlist>
+           <index pos="6">i1006</index>
+           </indexlist>
+           </dr>
+           <dr label="b3" name="s1">
+           <indexlist>
+           </indexlist>
+           </dr>
+          </domain>
+          <conds>
+           <cond label="b3">
+            <rel arg1="x2" arg2="s1" symbol="Attribute" sense="1">
+            <indexlist>
+            </indexlist>
+            </rel>
+           </cond>
+           <cond label="b3">
+            <pred arg="s1" symbol="red-headed" type="a" sense="0">
+            <indexlist>
+            <index pos="7">i1007</index>
+            </indexlist>
+            </pred>
+           </cond>
+           <cond label="b3">
+            <pred arg="x2" symbol="man" type="n" sense="0">
+            <indexlist>
+            <index pos="8">i1008</index>
+            </indexlist>
+            </pred>
+           </cond>
+           <cond label="b4">
+            <rel arg1="x2" arg2="x1" symbol="subset_of" sense="1">
+            <indexlist>
+            </indexlist>
+            </rel>
+           </cond>
+          </conds>
+         </drs>
+         <app>
+          <var>v2</var>
+          <var>x1</var>
+         </app>
+        </merge>
+       </merge>
+      </merge>
+     </lam>
+    </lam>
+    </sem>
+    <binaryrule type="conj" description="Conjunction">
+     <cat>
+      <backward>
+        <atomic>NP</atomic>
+        <atomic>NP</atomic>
+      </backward>
+     </cat>
+     <sem>
+     <lam>
+      <var>v1</var>
+      <lam>
+       <var>v2</var>
+       <merge>
+        <drs type="normal" label="b1">
+         <domain>
+          <dr label="b1" name="x1">
+          <indexlist>
+          <index pos="5">i1005</index>
+          </indexlist>
+          </dr>
+         </domain>
+         <conds>
+         </conds>
+        </drs>
+        <merge>
+         <app>
+          <var>v1</var>
+          <lam>
+           <var>v3</var>
+           <drs type="normal" label="b2">
+            <domain>
+            </domain>
+            <conds>
+             <cond label="b2">
+              <rel arg1="v3" arg2="x1" symbol="subset_of" sense="1">
+              <indexlist>
+              </indexlist>
+              </rel>
+             </cond>
+            </conds>
+           </drs>
+          </lam>
+         </app>
+         <merge>
+          <drs type="normal" label="b4">
+           <domain>
+            <dr label="b3" name="x2">
+            <indexlist>
+            <index pos="6">i1006</index>
+            </indexlist>
+            </dr>
+            <dr label="b3" name="s1">
+            <indexlist>
+            </indexlist>
+            </dr>
+           </domain>
+           <conds>
+            <cond label="b3">
+             <rel arg1="x2" arg2="s1" symbol="Attribute" sense="1">
+             <indexlist>
+             </indexlist>
+             </rel>
+            </cond>
+            <cond label="b3">
+             <pred arg="s1" symbol="red-headed" type="a" sense="0">
+             <indexlist>
+             <index pos="7">i1007</index>
+             </indexlist>
+             </pred>
+            </cond>
+            <cond label="b3">
+             <pred arg="x2" symbol="man" type="n" sense="0">
+             <indexlist>
+             <index pos="8">i1008</index>
+             </indexlist>
+             </pred>
+            </cond>
+            <cond label="b4">
+             <rel arg1="x2" arg2="x1" symbol="subset_of" sense="1">
+             <indexlist>
+             </indexlist>
+             </rel>
+            </cond>
+           </conds>
+          </drs>
+          <app>
+           <var>v2</var>
+           <var>x1</var>
+          </app>
+         </merge>
+        </merge>
+       </merge>
+      </lam>
+     </lam>
+     </sem>
+     <lex id="1005">
+      <token>,</token>
+      <tag type="sem">AND</tag>
+      <tag type="sym">,</tag>
+      <tag type="lemma">,</tag>
+      <tag type="from">6</tag>
+      <tag type="to">7</tag>
+      <tag type="pos">,</tag>
+      <cat>
+        <atomic>conj</atomic>
+      </cat>
+      <sem>
+       <lam>
+        <var>v1</var>
+        <lam>
+         <var>v2</var>
+         <lam>
+          <var>v3</var>
+          <merge>
+           <drs type="normal" label="b1">
+            <domain>
+             <dr label="b1" name="x1">
+             <indexlist>
+             <index pos="5">i1005</index>
+             </indexlist>
+             </dr>
+            </domain>
+            <conds>
+            </conds>
+           </drs>
+           <merge>
+            <app>
+             <var>v2</var>
+             <lam>
+              <var>v4</var>
+              <drs type="normal" label="b2">
+               <domain>
+               </domain>
+               <conds>
+                <cond label="b2">
+                 <rel arg1="v4" arg2="x1" symbol="subset_of" sense="1">
+                 <indexlist>
+                 </indexlist>
+                 </rel>
+                </cond>
+               </conds>
+              </drs>
+             </lam>
+            </app>
+            <merge>
+             <app>
+              <var>v1</var>
+              <lam>
+               <var>v5</var>
+               <drs type="normal" label="b3">
+                <domain>
+                </domain>
+                <conds>
+                 <cond label="b3">
+                  <rel arg1="v5" arg2="x1" symbol="subset_of" sense="1">
+                  <indexlist>
+                  </indexlist>
+                  </rel>
+                 </cond>
+                </conds>
+               </drs>
+              </lam>
+             </app>
+             <app>
+              <var>v3</var>
+              <var>x1</var>
+             </app>
+            </merge>
+           </merge>
+          </merge>
+         </lam>
+        </lam>
+       </lam>
+      </sem>
+     </lex>
+     <binaryrule type="fa" description="Forward Application">
+      <cat>
+        <atomic>NP</atomic>
+      </cat>
+      <sem>
+      <lam>
+       <var>v1</var>
+       <alfa type="def">
+        <drs type="normal" label="b1">
+         <domain>
+          <dr label="b1" name="x1">
+          <indexlist>
+          <index pos="6">i1006</index>
+          </indexlist>
+          </dr>
+          <dr label="b1" name="s1">
+          <indexlist>
+          </indexlist>
+          </dr>
+         </domain>
+         <conds>
+          <cond label="b1">
+           <rel arg1="x1" arg2="s1" symbol="Attribute" sense="1">
+           <indexlist>
+           </indexlist>
+           </rel>
+          </cond>
+          <cond label="b1">
+           <pred arg="s1" symbol="red-headed" type="a" sense="0">
+           <indexlist>
+           <index pos="7">i1007</index>
+           </indexlist>
+           </pred>
+          </cond>
+          <cond label="b1">
+           <pred arg="x1" symbol="man" type="n" sense="0">
+           <indexlist>
+           <index pos="8">i1008</index>
+           </indexlist>
+           </pred>
+          </cond>
+         </conds>
+        </drs>
+        <app>
+         <var>v1</var>
+         <var>x1</var>
+        </app>
+       </alfa>
+      </lam>
+      </sem>
+      <lex id="1006">
+       <token>the</token>
+       <tag type="sem">DEF</tag>
+       <tag type="sym">the</tag>
+       <tag type="lemma">the</tag>
+       <tag type="from">8</tag>
+       <tag type="to">11</tag>
+       <tag type="pos">DT</tag>
+       <cat>
+        <forward>
+          <atomic>NP</atomic>
+          <atomic>N</atomic>
+        </forward>
+       </cat>
+       <sem>
+        <lam>
+         <var>v1</var>
+         <lam>
+          <var>v2</var>
+          <alfa type="def">
+           <merge>
+            <drs type="normal" label="b1">
+             <domain>
+              <dr label="b1" name="x1">
+              <indexlist>
+              <index pos="6">i1006</index>
+              </indexlist>
+              </dr>
+             </domain>
+             <conds>
+             </conds>
+            </drs>
+            <app>
+             <var>v1</var>
+             <var>x1</var>
+            </app>
+           </merge>
+           <app>
+            <var>v2</var>
+            <var>x1</var>
+           </app>
+          </alfa>
+         </lam>
+        </lam>
+       </sem>
+      </lex>
+      <binaryrule type="fa" description="Forward Application">
+       <cat>
+         <atomic>N</atomic>
+       </cat>
+       <sem>
+       <lam>
+        <var>v1</var>
+        <drs type="normal" label="b1">
+         <domain>
+          <dr label="b1" name="s1">
+          <indexlist>
+          </indexlist>
+          </dr>
+         </domain>
+         <conds>
+          <cond label="b1">
+           <rel arg1="v1" arg2="s1" symbol="Attribute" sense="1">
+           <indexlist>
+           </indexlist>
+           </rel>
+          </cond>
+          <cond label="b1">
+           <pred arg="s1" symbol="red-headed" type="a" sense="0">
+           <indexlist>
+           <index pos="7">i1007</index>
+           </indexlist>
+           </pred>
+          </cond>
+          <cond label="b1">
+           <pred arg="v1" symbol="man" type="n" sense="0">
+           <indexlist>
+           <index pos="8">i1008</index>
+           </indexlist>
+           </pred>
+          </cond>
+         </conds>
+        </drs>
+       </lam>
+       </sem>
+       <lex id="1007">
+        <token>red-headed</token>
+        <tag type="sem">IST</tag>
+        <tag type="sym">red-headed</tag>
+        <tag type="lemma">red-headed</tag>
+        <tag type="from">12</tag>
+        <tag type="to">22</tag>
+        <tag type="pos">JJ</tag>
+        <cat>
+         <forward>
+           <atomic>N</atomic>
+           <atomic>N</atomic>
+         </forward>
+        </cat>
+        <sem>
+         <lam>
+          <var>v1</var>
+          <lam>
+           <var>v2</var>
+           <merge>
+            <drs type="normal" label="b1">
+             <domain>
+              <dr label="b1" name="s1">
+              <indexlist>
+              </indexlist>
+              </dr>
+             </domain>
+             <conds>
+              <cond label="b1">
+               <rel arg1="v2" arg2="s1" symbol="Attribute" sense="1">
+               <indexlist>
+               </indexlist>
+               </rel>
+              </cond>
+              <cond label="b1">
+               <pred arg="s1" symbol="red-headed" type="a" sense="0">
+               <indexlist>
+               <index pos="7">i1007</index>
+               </indexlist>
+               </pred>
+              </cond>
+             </conds>
+            </drs>
+            <app>
+             <var>v1</var>
+             <var>v2</var>
+            </app>
+           </merge>
+          </lam>
+         </lam>
+        </sem>
+       </lex>
+       <lex id="1008">
+        <token>man</token>
+        <tag type="sem">CON</tag>
+        <tag type="sym">man</tag>
+        <tag type="lemma">man</tag>
+        <tag type="from">23</tag>
+        <tag type="to">26</tag>
+        <tag type="pos">NN</tag>
+        <cat>
+          <atomic>N</atomic>
+        </cat>
+        <sem>
+         <lam>
+          <var>v1</var>
+          <drs type="normal" label="b1">
+           <domain>
+           </domain>
+           <conds>
+            <cond label="b1">
+             <pred arg="v1" symbol="man" type="n" sense="0">
+             <indexlist>
+             <index pos="8">i1008</index>
+             </indexlist>
+             </pred>
+            </cond>
+           </conds>
+          </drs>
+         </lam>
+        </sem>
+       </lex>
+       <tokens>
+        <token>red-headed</token>
+        <token>man</token>
+       </tokens>
+      </binaryrule>
+      <tokens>
+       <token>the</token>
+       <token>red-headed</token>
+       <token>man</token>
+      </tokens>
+     </binaryrule>
+     <tokens>
+      <token>,</token>
+      <token>the</token>
+      <token>red-headed</token>
+      <token>man</token>
+     </tokens>
+    </binaryrule>
+    <binaryrule type="ba" description="Backward Application">
+     <cat>
+      <backward>
+       <backward>
+         <atomic>NP</atomic>
+         <atomic>NP</atomic>
+       </backward>
+       <backward>
+         <atomic>NP</atomic>
+         <atomic>NP</atomic>
+       </backward>
+      </backward>
+     </cat>
+     <sem>
+     <lam>
+      <var>v1</var>
+      <var>v1</var>
+     </lam>
+     </sem>
+     <lex id="1009">
+      <token>?</token>
+      <tag type="sem">NIL</tag>
+      <tag type="sym">?</tag>
+      <tag type="lemma">?</tag>
+      <tag type="from">26</tag>
+      <tag type="to">27</tag>
+      <tag type="pos">.</tag>
+      <cat>
+       <backward>
+        <backward>
+          <atomic>NP</atomic>
+          <atomic>NP</atomic>
+        </backward>
+        <backward>
+          <atomic>NP</atomic>
+          <atomic>NP</atomic>
+        </backward>
+       </backward>
+      </cat>
+      <sem>
+       <lam>
+        <var>v1</var>
+        <var>v1</var>
+       </lam>
+      </sem>
+     </lex>
+     <lex id="1010">
+      <token>?</token>
+      <tag type="sem">NIL</tag>
+      <tag type="sym">'''</tag>
+      <tag type="lemma">'''</tag>
+      <tag type="from">27</tag>
+      <tag type="to">28</tag>
+      <tag type="pos">NNS</tag>
+      <cat>
+       <backward>
+        <backward>
+         <backward>
+           <atomic>NP</atomic>
+           <atomic>NP</atomic>
+         </backward>
+         <backward>
+           <atomic>NP</atomic>
+           <atomic>NP</atomic>
+         </backward>
+        </backward>
+        <backward>
+         <backward>
+           <atomic>NP</atomic>
+           <atomic>NP</atomic>
+         </backward>
+         <backward>
+           <atomic>NP</atomic>
+           <atomic>NP</atomic>
+         </backward>
+        </backward>
+       </backward>
+      </cat>
+      <sem>
+       <lam>
+        <var>v1</var>
+        <var>v1</var>
+       </lam>
+      </sem>
+     </lex>
+     <tokens>
+      <token>?</token>
+      <token>?</token>
+     </tokens>
+    </binaryrule>
+    <tokens>
+     <token>,</token>
+     <token>the</token>
+     <token>red-headed</token>
+     <token>man</token>
+     <token>?</token>
+     <token>?</token>
+    </tokens>
+   </binaryrule>
+   <tokens>
+    <token>?</token>
+    <token>?</token>
+    <token>What</token>
+    <token>,</token>
+    <token>the</token>
+    <token>red-headed</token>
+    <token>man</token>
+    <token>?</token>
+    <token>?</token>
+   </tokens>
+  </binaryrule>
+ </der>
+</xdrs-output>
