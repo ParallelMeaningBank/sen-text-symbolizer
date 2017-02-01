@@ -1,0 +1,31 @@
+echo "First split the accpt_list.txt"
+
+cat accp_list.txt | grep -E ".*p[01].*" > 00-19/accpt_list_00-19.txt
+
+cat accp_list.txt | grep -E ".*p[23].*" > 20-39/accpt_list_20-39.txt
+
+cat accp_list.txt | grep -E ".*p[45].*" > 40-59/accpt_list_40-59.txt
+
+cat accp_list.txt | grep -E ".*p[67].*" > 60-79/accpt_list_60-79.txt
+
+cat accp_list.txt | grep -E ".*p[89].*" > 80-99/accpt_list_80-99.txt
+
+echo "Now run the extractors on gnome"
+
+gnome-terminal -x sh -c "python pmb_extract.py 00-19/accpt_list_00-19.txt 00-19/pmb_sym_2016-12-14_00-19.csv; bash"
+
+gnome-terminal -x sh -c "python pmb_extract.py 20-39/accpt_list_20-39.txt 20-39/pmb_sym_2016-12-14_20-39.csv; bash"
+
+gnome-terminal -x sh -c "python pmb_extract.py 40-59/accpt_list_40-59.txt 40-59/pmb_sym_2016-12-14_40-59.csv; bash"
+
+gnome-terminal -x sh -c "python pmb_extract.py 60-79/accpt_list_60-79.txt 60-79/pmb_sym_2016-12-14_60-79.csv; bash"
+
+gnome-terminal -x sh -c "python pmb_extract.py 80-99/accpt_list_80-99.txt 80-99/pmb_sym_2016-12-14_80-99.csv; bash"
+
+mv *-*/*man.csv sym_bow_only/
+
+cat sym_bow_only/* | sort > pmb_2016-12-14_sembows_only.csv
+
+mv *-*/*.csv all_words/
+
+cat all_words/* | sort > pmb_2016-12-14_has_at_least_1_semorsymbow.csv
