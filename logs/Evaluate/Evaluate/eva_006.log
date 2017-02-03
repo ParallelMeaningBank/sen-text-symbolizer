@@ -1,0 +1,165 @@
+Reading model parameters from chkpnt_006/translate.ckpt-15800
+Started evaluating model on test data.
+Started thread 0 with 1250 records.
+Started thread 1 with 1250 records.
+Started thread 2 with 1250 records.
+Started thread 3 with 1250 records.
+Started thread 4 with 1250 records.
+Started thread 5 with 1250 records.
+Started thread 6 with 1250 records.
+Started thread 7 with 1250 records.
+Started thread 8 with 1250 records.
+Started thread 9 with 1250 records.
+Started thread 10 with 1250 records.
+Started thread 11 with 1250 records.
+Started thread 12 with 1250 records.
+Started thread 13 with 1250 records.
+Started thread 14 with 1250 records.
+Started thread 15 with 1250 records.
+Started thread 16 with 1250 records.
+Started thread 17 with 1250 records.
+Started thread 18 with 1250 records.
+Started thread 19 with 1250 records.
+Started thread 20 with 1250 records.
+Started thread 21 with 1250 records.
+Started thread 22 with 1250 records.
+Started thread 23 with 1250 records.
+Started thread 24 with 1250 records.
+Started thread 25 with 1250 records.
+Started thread 26 with 1250 records.
+Started thread 27 with 1250 records.
+Started thread 28 with 1250 records.
+Started thread 29 with 1250 records.
+Started thread 30 with 1250 records.
+Started thread 31 with 1250 records.
+Started thread 32 with 1250 records.
+Started thread 33 with 1250 records.
+Started thread 34 with 1250 records.
+Started thread 35 with 1250 records.
+Started thread 36 with 1250 records.
+Started thread 37 with 1250 records.
+Started thread 38 with 1250 records.
+Started thread 39 with 1250 records.
+Evaluator 20 processed 1000 recs.
+Evaluator 13 processed 1000 recs.
+Evaluator 39 processed 1000 recs.
+Evaluator 3 processed 1000 recs.
+Evaluator 4 processed 1000 recs.
+Evaluator 12 processed 1000 recs.
+Evaluator 6 processed 1000 recs.
+Evaluator 8 processed 1000 recs.
+Evaluator 18 processed 1000 recs.
+Evaluator 19 processed 1000 recs.
+Evaluator 10 processed 1000 recs.
+Evaluator 25 processed 1000 recs.
+Evaluator 29 processed 1000 recs.
+Evaluator 7 processed 1000 recs.
+Evaluator 23 processed 1000 recs.
+Evaluator 35 processed 1000 recs.
+Evaluator 22 processed 1000 recs.
+Evaluator 5 processed 1000 recs.
+Evaluator 0 processed 1000 recs.
+Evaluator 34 processed 1000 recs.
+Evaluator 38 processed 1000 recs.
+Evaluator 2 processed 1000 recs.
+Evaluator 30 processed 1000 recs.
+Evaluator 11 processed 1000 recs.
+Evaluator 32 processed 1000 recs.
+Evaluator 37 processed 1000 recs.
+Evaluator 24 processed 1000 recs.
+Evaluator 17 processed 1000 recs.
+Evaluator 1 processed 1000 recs.
+Evaluator 36 processed 1000 recs.
+Evaluator 14 processed 1000 recs.
+Evaluator 21 processed 1000 recs.
+Evaluator 9 processed 1000 recs.
+Evaluator 31 processed 1000 recs.
+Evaluator 27 processed 1000 recs.
+Evaluator 15 processed 1000 recs.
+Evaluator 16 processed 1000 recs.
+Evaluator 33 processed 1000 recs.
+Evaluator 28 processed 1000 recs.
+Evaluator 26 processed 1000 recs.
+Evaluator: 20 finished. Result: 1135.0 correct out of 1250
+Evaluator: 13 finished. Result: 1130.0 correct out of 1250
+Evaluator: 4 finished. Result: 1118.0 correct out of 1250
+Evaluator: 6 finished. Result: 1123.0 correct out of 1250
+Evaluator: 39 finished. Result: 1126.0 correct out of 1250
+Evaluator: 3 finished. Result: 1146.0 correct out of 1250
+Evaluator: 18 finished. Result: 1139.0 correct out of 1250
+Evaluator: 12 finished. Result: 1124.0 correct out of 1250
+Evaluator: 25 finished. Result: 1151.0 correct out of 1250
+Evaluator: 29 finished. Result: 1124.0 correct out of 1250
+Evaluator: 8 finished. Result: 1133.0 correct out of 1250
+Evaluator: 19 finished. Result: 1136.0 correct out of 1250
+Evaluator: 7 finished. Result: 1129.0 correct out of 1250
+Evaluator: 10 finished. Result: 1138.0 correct out of 1250
+Evaluator: 35 finished. Result: 1121.0 correct out of 1250
+Evaluator: 0 finished. Result: 1123.0 correct out of 1250
+Evaluator: 38 finished. Result: 1130.0 correct out of 1250
+Evaluator: 22 finished. Result: 1130.0 correct out of 1250
+Evaluator: 23 finished. Result: 1126.0 correct out of 1250
+Evaluator: 32 finished. Result: 1142.0 correct out of 1250
+Evaluator: 30 finished. Result: 1114.0 correct out of 1250
+Evaluator: 5 finished. Result: 1142.0 correct out of 1250
+Evaluator: 11 finished. Result: 1122.0 correct out of 1250
+Evaluator: 37 finished. Result: 1130.0 correct out of 1250
+Evaluator: 2 finished. Result: 1125.0 correct out of 1250
+Evaluator: 34 finished. Result: 1124.0 correct out of 1250
+Evaluator: 24 finished. Result: 1109.0 correct out of 1250
+Evaluator: 17 finished. Result: 1129.0 correct out of 1250
+Evaluator: 14 finished. Result: 1127.0 correct out of 1250
+Evaluator: 21 finished. Result: 1123.0 correct out of 1250
+Evaluator: 36 finished. Result: 1117.0 correct out of 1250
+Evaluator: 9 finished. Result: 1137.0 correct out of 1250
+Evaluator: 16 finished. Result: 1136.0 correct out of 1250
+Evaluator: 1 finished. Result: 1142.0 correct out of 1250
+Evaluator: 15 finished. Result: 1108.0 correct out of 1250
+Evaluator: 31 finished. Result: 1136.0 correct out of 1250
+Evaluator: 33 finished. Result: 1128.0 correct out of 1250
+Evaluator: 28 finished. Result: 1129.0 correct out of 1250
+Evaluator: 26 finished. Result: 1141.0 correct out of 1250
+Evaluator: 27 finished. Result: 1137.0 correct out of 1250
+[[ 1123.  1250.]
+ [ 1142.  1250.]
+ [ 1125.  1250.]
+ [ 1146.  1250.]
+ [ 1118.  1250.]
+ [ 1142.  1250.]
+ [ 1123.  1250.]
+ [ 1129.  1250.]
+ [ 1133.  1250.]
+ [ 1137.  1250.]
+ [ 1138.  1250.]
+ [ 1122.  1250.]
+ [ 1124.  1250.]
+ [ 1130.  1250.]
+ [ 1127.  1250.]
+ [ 1108.  1250.]
+ [ 1136.  1250.]
+ [ 1129.  1250.]
+ [ 1139.  1250.]
+ [ 1136.  1250.]
+ [ 1135.  1250.]
+ [ 1123.  1250.]
+ [ 1130.  1250.]
+ [ 1126.  1250.]
+ [ 1109.  1250.]
+ [ 1151.  1250.]
+ [ 1141.  1250.]
+ [ 1137.  1250.]
+ [ 1129.  1250.]
+ [ 1124.  1250.]
+ [ 1114.  1250.]
+ [ 1136.  1250.]
+ [ 1142.  1250.]
+ [ 1128.  1250.]
+ [ 1124.  1250.]
+ [ 1121.  1250.]
+ [ 1117.  1250.]
+ [ 1130.  1250.]
+ [ 1130.  1250.]
+ [ 1126.  1250.]]
+Sum: [ 45180.  50000.]
+correct: 45180.0 out of 50000.0
+Accuracy: 0.9036

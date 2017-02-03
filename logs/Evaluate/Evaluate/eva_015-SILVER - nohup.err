@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "translate.py", line 564, in <module>
+    if __name__ == "__main__":
+  File "/home/p278658/.local/lib/python2.7/site-packages/tensorflow/python/platform/app.py", line 30, in run
+    sys.exit(main(sys.argv[:1] + flags_passthrough))
+  File "translate.py", line 558, in main
+    elif FLAGS.evaluate:
+  File "translate.py", line 524, in evaluate
+    t_val = sum_total_cnt[tag];
+TypeError: 'enumerate' object has no attribute '__getitem__'
